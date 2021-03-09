@@ -5,20 +5,22 @@ If the length of your name is larger than 5 characters, change the text colour t
 function Firstname() {
     var value = document.getElementsById("FirstName").value;
     var value1 = document.getElementById("LastName").value;
-    var value2 = document.getElementsById("Age").value;
+    var value2 = document.getElementsById("Age")
 
     let Firstname = "";
     if (value > 5) {
         Firstname = `<p class="green">${value}</p>`
     }
-    else { Firstname = `<p class="red">${value}</p>` }
-
+    else { LastName = `<p class="red">${value}</p>` }
 
     let LastName = "";
-    if (value1 > )
+    if (value1 > 5) {
+        LastName = `<p class="green">${value1}</p>`
+    }
 
 
-        console.log(value)
+
+    console.log(value)
     document.getElementById("list").innerHTML += `<div>${value}</div>`;
 }
 document.getElementsById("btn").addEventListener("click", result);
