@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate 2</title>
+    <style>
+        body {
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body id="Body">
+    <!-- Create a JavaScript function to create random background colors each time we click a button that we had on the website.
+        Hint:
+        - Consider the RGB color code
+        - Consider the Global DOM built-in properties and methods -->
+
+    <button id="RandomBGCol">Change the Background Color</button>
+
+    <script>
+        document.getElementById("RandomBGCol").addEventListener("click", function() {
+            let BGcolor = Math.floor(Math.random() * 256);
+            document.getElementById("Body").style.backgroundColor = "#" + BGcolor;
+            console.log(BGcolor);
+        });
+    </script>
+</body>
+
+
+</html>
